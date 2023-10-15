@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root{
+    --headfont:'Bebas Neue', sans-serif;
+    --mainfont: 'Poppins', sans-serif;
+    
+}
+
+html{
+    font-size:62.5%;
+    font-style: var(--mainfont);
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background:linear-gradient(70deg,rgb(0, 173, 252),rgb(0, 199, 204),rgb(0, 226, 160),rgb(0, 242, 129));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width:40rem;
+    height:60rem;
+    background-color: black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    height:40%;
+    width:100%;
+    background-color: rgb(23, 45, 103);
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border:none;
+    color:white;
+    padding:3rem 3.5rem;
+    font-size:3.5rem;
+    text-align: end;
+    font-weight: 800;
+    pointer-events: none;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    width:0rem;
+}
+textarea::-webkit-scrollbar{
+    width:0rem;
+}
+.keyscontainer{
+    width:100%;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.row{
+    display: flex;
+    width:100%;
+    padding:1rem 1rem;
+    justify-content: space-around;
+}
+.key{
+    font-size:3rem;
+    color:rgb(145, 152, 162);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.lastbtn{
+    color:rgb(23, 45, 103);
+}
